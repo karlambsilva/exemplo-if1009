@@ -44,7 +44,7 @@ Na função creditarValor, utilizamos o método assertThat que recebe como parâ
 O segundo teste validará se a exceção OperacaoIlegalException foi levantada. Caso sim, o teste passará. 
 
 **Teste 3**
-
+Na função encontrarCLienteRico, através do método assertThat testaremos se o cliente possui mais de 1000 reais na conta.
 
 **Teste 4**
 
