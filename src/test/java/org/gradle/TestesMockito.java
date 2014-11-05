@@ -46,13 +46,19 @@ public class TestesMockito {
 		 verify(mockedBanco).setDescricao("Banco de Olinda");
 		 verify(mockedBanco).getDescricao();
 	}
+	/**
+	 * Este teste cria um mock do tipo Conta e diz que quando pergamos o valor do saldo do mokc Conta (mockedConta)
+	 * o mock deve retorna o saldo como 0.0. O teste, entao, realiza um assertEquals para verificar se o saldo do mockedConta
+	 * eh realmente 0.0
+	 */
 
 	@Test
 	public void test03(){
-		 
+		 //criacao do mock
 		Conta mockedConta = mock(Conta.class);
+		// definicao de como o mock deve se comportar
 		when(mockedConta.getSaldo()).thenReturn(0.0);
-		
+		//verificao se o mock esta se comportando como defenido
 		assertEquals(0.0, mockedConta.getSaldo(), 0.0);
 	}
 
