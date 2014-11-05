@@ -14,11 +14,13 @@ public class TestesHamcrest{
 	
 	Conta contaPessoa1;
 	Conta contaPessoa2;
+	ContaPoupanca cp;
 	
 	@Before
 	public void setup(){
 		contaPessoa1 = new Conta("Pessoa 1" , 1234, 50.00);
 		contaPessoa2 = new Conta("Pessoa 2" , 1235, 500.00);
+		cp = new ContaPoupanca("Pessoa3", 333, 100.0, 0.1);
 	}
 	
 	/**
@@ -62,5 +64,14 @@ public class TestesHamcrest{
 				contaPessoa2.getSaldo(), greaterThan(1000.00) );
 	}
 	
+	/**
+	* Esse teste usara o metodo validarJurosAdicionados pra verificar se os juros 
+	* foram creditados na conta
+	*/
+	@Test
+	public void validarJurosAdicionados(){
+		this.cp.renderJuros(0.1);
+		assertThat("A cliente deve estar com 110 reais na conta.", cp.getSaldo(), equalTo(110.0));
+	}
 	
 }
