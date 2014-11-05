@@ -41,13 +41,14 @@ O hamcrest é um framework que trabalha muito bem o JUnit. Ele foi desenvolvido 
 Na função creditarValor, utilizamos o método assertThat que recebe como parâmetro um objeto e uma Implementação de Matcher para fazer a verificação. Por exemplo, ele vai verificar se o saldo da contaPessoa1 é igual a 20.0. 
 
 **Teste 2**
-O segundo teste validará se a exceção OperacaoIlegalException foi levantada. Caso sim, o teste passará. 
+O segundo teste validará se a exceção **OperacaoIlegalException** foi levantada. Para fazer esse verificação precisamos adicionar a classe da exceção que o teste deve esperar dentro da notação de test. A linha 40 da classe TestesHamcrest demonstra essa operação. 
+No nosso exemplo, o teste passará apenas se a exceção for levantada.
 
 **Teste 3**
 Na função encontrarCLienteRico, através do método assertThat testaremos se o cliente possui mais de 1000 reais na conta.
 
 **Teste 4**
-
+O test 4 demonstra o uso do método _containsString_ que faz parte da biblioteca Text que valida o matching para strings. No nosso exemplo (linhas 57 - 65), validamos se a string "2" está contida no nome da conta. 
 
 **Teste 5**
 Na função validarJurosAdicionados, utilizaremos o método assertThat para verificar se o os juros foram creditados corretamente na conta do cliente
