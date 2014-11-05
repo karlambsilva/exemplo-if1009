@@ -53,16 +53,21 @@ Na função encontrarCLienteRico, através do método assertThat testaremos se o
 Na função validarJurosAdicionados, utilizaremos o método assertThat para verificar se o os juros foram creditados corretamente na conta do cliente
 
 ###Mockito
-Um framework Open source que permite a criação de objetos mocks e spies, enquanto provê controle de todo o processo.
+Um framework Open source que permite a criação de objetos mocks e spies, enquanto provê controle de todo o processo. Permite integração com o Maven, o Gradle, o JUnit, o TestNG,  o Hamcrest, o Jenkins, entre outros.
+
+**Saiba mais sobre o Mockito**: <https://www.youtube.com/watch?v=bBiR6x7RqZc> e <https://www.youtube.com/watch?v=Vind9YEUyLM> 
 
 **Teste 1**
-
-
+O 1º teste demostra o uso da **função verify** para mocks. Como passo inicial para criação desse código cria-se um mock da classe Banco para então utilizar o verify. A função verify é importante para validar se determinadas funções declaradas no mock foram chamadas. 
+Nas linhas 21 e 22 da classe TestesMockito são declarados os métodos que serão chamados e os parâmetros que eles receberão. Nas linhas 26 e 27, é validado se os métodos informados foram chamados e verifica se a informação retornada foi a criada para o mock.
 
 **Teste 2**
-
+O 2º teste também demonstra a **função verify**, contudo foi escrito para gerar uma falha. Novamente, o primeiro passo para descrição desse código de teste é criar um mock do tipo Banco. Nas linhas 42 e 43 da classe TestesMockito é declarado que a descrição do Banco será "Banco Recife". Esse é o resultado que estamos defenindo para o nosso mock.  
+O teste deverá falhar, pois apesar de colocarmos o mock com a descrição "Banco do Recife", ao utilizar o verify estamos verificando se a descrição é "Banco Olinda".
 
 **Teste 3**
+O 3º teste demosntra a criação de um mock do tipo Conta. Onde, após criado o mock, que foi chamado de mockedConta, definimos que todas as vezes que pegarmos a variável saldo o mock deve retorna com o saldo no valor 0.0. Para testar se isto realmente acontece, utilizamos o **assertEquals** para verificar se o saldo do mockedConta é realmente 0.0.
 
 
-**Teste 4**
+
+
