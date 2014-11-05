@@ -22,6 +22,8 @@ Após clicar no botão Install, você deve selecionar os pacotes desejados e con
 
 Por fim, você deverá ser solicitado a reiniciar o eclipse para que as alterações tenham efeito. Após reinicia-lo você poderá criar o seu projeto Gradle.
 
+//Explicar como criar um projeto
+
 ### Hamcrest
 Dentro da secao de dependencias do build.gradle,  eh necessario especificar a versao e o pacote de dependencia que iremos utilizar. Voce pode adicionar o pacote all que contem todas as bibliotecas de Matchers do Hamcrest, conforme a figura XXX.
 
