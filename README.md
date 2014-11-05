@@ -25,3 +25,18 @@ Por fim, você deverá ser solicitado a reiniciar o eclipse para que as alteraç
 ### Hamcrest
 Dentro da secao de dependencias do build.gradle,  eh necessario especificar a versao e o pacote de dependencia que iremos utilizar. Voce pode adicionar o pacote all que contem todas as bibliotecas de Matchers do Hamcrest, conforme a figura XXX.
 
+### Mockito
+
+
+##Demonstração
+Dentro da classe Conta temos os métodos Get e set, além de outros métodos especiais como o “debitar” e o “creditar”. O método “debitar” verifica se o valor a ser debitado é maior que o saldo conta, se isso acontecer, ele pode lançar uma exceção, a qual chamamos de OperaçãoIlegalException. Já o método creditar recebe um valor double e adiciona esse valor ao saldo da conta. Adicionalmente, temos a classe banco que possui uma lista de contas, descrição, telefone e um construtor.
+
+
+###Hamcrest
+O hamcrest é um framework que trabalha muito bem o JUnit. Ele foi desenvolvido para melhorar a legibilidade dos testes, tornando a execução mais detalhada e concisa. Para isto, ele possui uma serie de Matchers que estão divididos em bibliotecas. Os testes realizados com o framework Hamcrest podem ser encontrados no pacote org.gradle, na classe TestesHamcrest.java.
+Na função creditarValor, utilizamos o método assertThat que recebe como parâmetro um objeto e uma Implementação de Matcher para fazer a verificação. Por exemplo, ele vai verificar se o saldo da contaPessoa1 é igual a 20.0. 
+
+
+
+###Mockito
+Um framework Open source que permite a criação de objetos mocks e spies, enquanto provê controle de todo o processo.
