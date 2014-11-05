@@ -42,7 +42,7 @@ O hamcrest é um framework que trabalha muito bem o JUnit. Ele foi desenvolvido 
 Na função creditarValor, utilizamos o método assertThat que recebe como parâmetro um objeto e uma Implementação de Matcher para fazer a verificação. Por exemplo, ele vai verificar se o saldo da contaPessoa1 é igual a 20.0. 
 
 **Teste 2**
-
+O segundo teste validará se a exceção OperacaoIlegalException foi levantada. Caso sim, o teste passará. 
 
 **Teste 3**
 
