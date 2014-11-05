@@ -49,6 +49,8 @@ O segundo teste validará se a exceção OperacaoIlegalException foi levantada. 
 
 **Teste 4**
 
+** Teste 5**
+Na função validarJurosAdicionados, utilizaremos o método assertThat para verificar se o os juros foram creditados corretamente na conta do cliente
 
 ###Mockito
 Um framework Open source que permite a criação de objetos mocks e spies, enquanto provê controle de todo o processo.
