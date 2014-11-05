@@ -52,3 +52,15 @@ Na função creditarValor, utilizamos o método assertThat que recebe como parâ
 
 ###Mockito
 Um framework Open source que permite a criação de objetos mocks e spies, enquanto provê controle de todo o processo.
+
+**Teste 1**
+
+
+
+**Teste 2**
+
+
+**Teste 3**
+
+
+**Teste 4**
