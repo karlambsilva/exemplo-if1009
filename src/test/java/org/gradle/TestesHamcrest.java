@@ -6,10 +6,8 @@ import static org.hamcrest.Matchers.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import exemplo.Conta;
-import exemplo.OperacaoIlegalException;
 
-public class Testes{
+public class TestesHamcrest{
 	
 	Conta contaPessoa1;
 	Conta contaPessoa2;
