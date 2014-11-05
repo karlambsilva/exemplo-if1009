@@ -10,7 +10,7 @@
 
 O Gradle é um sistema de builds baseado no groovy que tem se tornando bastante popular nos últimos dias. O processo de instalação e bem simples. Primeiramente, você deve clicar no menu Help e em seguida Eclipse Marketplace como na figura 1.
 
-//Figura 1
+
 
 Na janela de pesquisa, você pode pesquisar por Gradle e clicar no botão “Go”. Logo em seguida, você devera clicar em “Install” para o pacote desejado.
 
