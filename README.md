@@ -34,8 +34,18 @@ Dentro da classe Conta temos os métodos Get e set, além de outros métodos esp
 
 ###Hamcrest
 O hamcrest é um framework que trabalha muito bem o JUnit. Ele foi desenvolvido para melhorar a legibilidade dos testes, tornando a execução mais detalhada e concisa. Para isto, ele possui uma serie de Matchers que estão divididos em bibliotecas. Os testes realizados com o framework Hamcrest podem ser encontrados no pacote org.gradle, na classe TestesHamcrest.java.
+
+**Teste 1**
+
 Na função creditarValor, utilizamos o método assertThat que recebe como parâmetro um objeto e uma Implementação de Matcher para fazer a verificação. Por exemplo, ele vai verificar se o saldo da contaPessoa1 é igual a 20.0. 
 
+**Teste 2**
+
+
+**Teste 3**
+
+
+**Teste 4**
 
 
 ###Mockito
