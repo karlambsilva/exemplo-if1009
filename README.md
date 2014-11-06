@@ -73,4 +73,8 @@ O 3º teste demosntra a criação de um mock do tipo Conta. Onde, após criado o
 
 
 
-
+Dúvidas? Entre em contato conosco!
+Isabel Amaral - ioja@cin.ufpe.br
+Karine Gome - kgmg@cin.ufpe.br
+Karla Silva - kmbs@cin.ufpe.br
+Marcela Oliveira - mpo@cin.ufpe.br
